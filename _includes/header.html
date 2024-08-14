@@ -19,7 +19,7 @@
                                         <li>
                                             <i class="fa fa-envelope-o"></i>
                                             Email us:
-                                            <span>3190rbe@gmail.com</span>
+                                            <span>info@3190rbe.org</span>
                                         </li>
                                     </ul>
                                 </div>	
@@ -56,8 +56,10 @@
                                 <li><a href="{{site.baseurl}}/blog">blog</a></li>
                                 <li><a href="{{site.baseurl}}/contact">Contact</a></li>
                                 <li class="search"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
-                                    <form class="form-search">
-                                        <input type="search" placeholder="Search:"/>
+                                    <form class="form-search" action="{{ site.baseurl }}/search" method="get" name="searchform">
+                                        <!-- <input name="sitesearch" type="hidden" value="3190rbe.org"> -->
+                                        <input type="search" name="q" placeholder="Search in 3190rbe.org" required="required">
+                                        <!-- <input type="search" placeholder="Search:"/> -->
                                         <button type="submit">
                                             <i class="fa fa-search"></i>
                                         </button>

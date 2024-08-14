@@ -241,6 +241,9 @@ ul.drop-down li a:hover {
   right: 0;
   left: 0;
   width: 100%;
+  border-style: dotted;
+  border: 1px solid #ff9000;
+  border-top: none;
   background: #f5f5f5;
   padding: 4px;
   visibility: hidden;
@@ -578,7 +581,7 @@ section.services-section .services-box .services-post:hover .services-content h2
 #statistic-section .statistic-post p {
   margin: 0 0 20px;
 }
-#statistic-section .statistic-post span.timer {
+#statistic-section .statistic-post span{
   color: #ffffff;
   font-size: 48px;
   font-family: 'Montserrat', sans-serif;
@@ -957,6 +960,17 @@ section.services-section .services-box .services-post:hover .services-content h2
   margin: 0 0 30px;
 }
 .subcribe-section form input[type="text"] {
+  outline: none;
+  color: #999999;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  padding: 14px 10px;
+  border: none;
+  margin: 0 12px;
+  width: 220px;
+}
+.subcribe-section form input[type="email"] {
   outline: none;
   color: #999999;
   font-size: 12px;
@@ -1528,8 +1542,30 @@ section.services-section .services-box .services-post:hover .services-content h2
 .comment-form {
   margin-bottom: -30px;
 }
-#contact-form input[type="text"],
-.comment-form input[type="text"],
+
+#contact-form select,
+.comment-form select {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #dedede;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  color: #5a5a5a;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+
+  background: #ffffff;
+  height: 58px;
+  overflow: hidden;
+}
+
+#contact-form input,
+.comment-form input,
 #contact-form textarea,
 .comment-form textarea {
   width: 100%;
@@ -1544,9 +1580,13 @@ section.services-section .services-box .services-post:hover .services-content h2
   color: #5a5a5a;
   font-size: 13px;
   font-family: 'Montserrat', sans-serif;
+
+  height: 58px;
 }
-#contact-form input[type="text"]:focus,
-.comment-form input[type="text"]:focus,
+#contact-form input:focus,
+.comment-form input:focus,
+#contact-form select:focus,
+.comment-form select:focus,
 #contact-form textarea:focus,
 .comment-form textarea:focus {
   border: 1px solid #ff9000;
@@ -1761,4 +1801,55 @@ footer .contact-info p {
   .blog-section .blog-box .autor-post .autor-content {
     margin-left: 0;
   }
+}
+
+/* Slider Start */
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000b3; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff9000; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6500; 
+}
+/* Slider End */
+
+
+/* Adding button design in title section */
+
+
+.title-section a {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ff9000;
+  border: 2px solid #ff9000;
+  /* background: #ff9000; */
+  /* border-color: #ff9000; */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 12px 45px;
+}
+.title-section a:hover {
+  opacity: 0.7;
 }
